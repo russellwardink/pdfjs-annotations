@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Annotation Canvas Example</title>
+    <style type="text/css">
+        #container {
+            position: relative;
+        }
+        .canvas {
+            position:absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #000000;
+            background-color: transparent;
+        }
+
+        #text-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            opacity: 0.2;
+            line-height: 1.0;
+            width: 600px;
+            height:800px;
+            border: 1px solid #000000;
+        }
+
+        #text-layer > div {
+            color: transparent;
+            position: absolute;
+            white-space: pre;
+            cursor: text;
+        }
+    </style>
+    <script src='main.bundle.js' type="module"></script>
+</head>
+<body>
+This is an example of how we can draw area based annotations
+<div id="container">
+    <canvas class="canvas" id="pdf-canvas" width="600px" height="800px">
+        Your Browser does not support HTML5 Canvas
+    </canvas>
+    <canvas class="canvas" id="canvas" width="600px" height="800px">
+        Your Browser does not support HTML5 Canvas
+    </canvas>
+    <div id="text-layer"></div>
+
+</div>
+
+</body>
+</html>

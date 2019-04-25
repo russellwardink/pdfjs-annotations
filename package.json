@@ -1,0 +1,16 @@
+{
+  "name": "canvasexample",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pdfjs-dist": "^2.0.943",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
